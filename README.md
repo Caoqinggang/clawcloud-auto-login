@@ -1,5 +1,3 @@
----
-
 # ☁️ ClawCloud 自动保活脚本 (Node.js 版)
 
 这是一个基于 **GitHub Actions** 和 **Playwright** 的自动化脚本，用于定时登录 ClawCloud 面板以保持账号活跃。
@@ -51,7 +49,7 @@
 > ⚠️ **注意**：`GH_SESSION` 必须存在，第一次创建时值留空即可。脚本运行成功后会自动更新它。
 
 ### 3. 修改区域 (可选)
-脚本默认连接的是 **法兰克福 (eu-central-1)** 区域。如果您的账号在 **美西** 或其他区域，请修改 `scripts/auto_login.js` 第 17 行：
+脚本默认连接的是 **新加坡 (ap-southeast-1)** 区域。如果您的账号在 **美西** 或其他区域，请修改 `scripts/auto_login.js` 第 17 行：
 
 ```javascript
 // 修改为实际的控制台地址
