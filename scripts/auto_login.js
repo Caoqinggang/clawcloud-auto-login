@@ -14,7 +14,7 @@ const sodium = require('libsodium-wrappers');
 
 // ==================== 配置 ====================
 const CONFIG = {
-    CLAW_CLOUD_URL: "https://eu-central-1.run.claw.cloud", // 如果是美西请修改
+    CLAW_CLOUD_URL: "https://ap-southeast-1.run.claw.cloud", // 如果是美西请修改
     DEVICE_VERIFY_WAIT: 60, // 秒
     TWO_FACTOR_WAIT: parseInt(process.env.TWO_FACTOR_WAIT || "120"),
     GH_USERNAME: process.env.GH_USERNAME,
