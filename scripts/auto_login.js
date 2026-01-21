@@ -240,7 +240,7 @@ class AutoLogin {
         logger.log(`需要设备验证，等待 ${CONFIG.DEVICE_VERIFY_WAIT} 秒...`, "WARN");
         const s = await this.shot(page, "设备验证");
         
-        await this.tg.send(`⚠️ <b>需要设备验证</b>\n\n请在 ${CONFIG.DEVICE_VERIFY_WAIT} 秒内批准：\n1️⃣ 检查邮箱点击链接\n2️⃣ 或在 GitHub App 批准`);
+        await this.tg.send(`⚠️ <b>需要设备验证</b>\n<b>用户:</b> ${CONFIG.GH_USERNAME}\n请在 ${CONFIG.DEVICE_VERIFY_WAIT} 秒内批准：\n1️⃣ 检查邮箱点击链接\n2️⃣ 或在 GitHub App 批准`);
         if (s) await this.tg.photo(s, "设备验证页面");
 
         for (let i = 0; i < CONFIG.DEVICE_VERIFY_WAIT; i++) {
